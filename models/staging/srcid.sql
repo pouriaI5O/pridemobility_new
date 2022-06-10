@@ -8,4 +8,4 @@ select Id_Wip,
        EXTRACT(MINUTE FROM timestamps) AS Minute,
        EXTRACT(SECOND FROM timestamps) AS Second, 
        DATE(timestamps) as Date          
-FROM {{ source('public','pridemobility') }}
+FROM {{ source('public','pride_cb') }}

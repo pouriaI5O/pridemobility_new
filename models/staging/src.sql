@@ -9,4 +9,4 @@ select  count_wip,count_wt,
           EXTRACT(SECOND FROM timestamps) AS Second, 
           DATE(timestamps) as Date
                               
-FROM {{ source('public','pridemobility') }}
+FROM {{ source('public','pride_cb') }}
